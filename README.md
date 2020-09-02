@@ -7,6 +7,7 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 
 * [Enviroments](#Enviroments)
 * [Algorithms](#Algorithms)
+* [Requirements](#Requirements)
 * [Credits](#Credits)
 
 
@@ -53,7 +54,8 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * Local Beam Serach
 * CSP with MRV & Degree & Forward Checking & AC-3
 
-
+## Requirements
+you need to have <b>python3</b> and <b>flask library</b> installed when running the code
 
 ## Credits
 
