@@ -8,6 +8,7 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * [Enviroments](#Enviroments)
 * [Algorithms](#Algorithms)
 * [Requirements](#Requirements)
+* [How To Run](#How-To_Run)
 * [Credits](#Credits)
 
 
@@ -56,6 +57,9 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 
 ## Requirements
 you need to have <b>python3</b> and <b>flask library</b> installed when running the code
+
+## How To Run
+navigate to the main folder and run <code>python3 app.py</code> in a terminal(Linux & Mac) or cmd(Windows) and open the given link in your browser
 
 ## Credits
 
