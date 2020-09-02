@@ -39,7 +39,19 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 
 
 ## Algorithms
-
+* Breadth First Search
+* Depth First Search
+* Uniform Cost Search
+* Depth Limited Search
+* Iterative Depth Search
+* Best First Search
+* A Star Search
+* HillClimbing
+* Random Restart HillClimbing
+* Genetic Algorithm
+* Simulated Annealing (still working on this one)
+* Local Beam Serach
+* CSP with MRV & Degree & Forward Checking & AC-3
 
 
 
