@@ -8,7 +8,7 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * [Enviroments](#Enviroments)
 * [Algorithms](#Algorithms)
 * [Requirements](#Requirements)
-* [How To Run](#How-To_Run)
+* [How To Run](#How-To-Run)
 * [Credits](#Credits)
 
 
