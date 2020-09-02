@@ -45,7 +45,7 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * Depth Limited Search
 * Iterative Depth Search
 * Best First Search
-* A Star Search
+* A* Search
 * HillClimbing
 * Random Restart HillClimbing
 * Genetic Algorithm
