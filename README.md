@@ -23,7 +23,7 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * [Sudoku](#Sudoku)
 
 ### Romania Map
-
+![Romania](https://user-images.githubusercontent.com/70624162/92299447-757cbb00-ef67-11ea-94ff-cf9be75a19de.gif)
 
 ### N Queens
 
