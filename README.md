@@ -23,10 +23,10 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * [Sudoku](#Sudoku)
 
 ### Romania Map
-![Romania](https://user-images.githubusercontent.com/70624162/92299447-757cbb00-ef67-11ea-94ff-cf9be75a19de.gif)
+![Romania](https://user-images.githubusercontent.com/70624162/92299596-d658c300-ef68-11ea-86e3-31e40de44200.gif)
 
 ### N Queens
-
+![NQueens](https://user-images.githubusercontent.com/70624162/92299637-5f6ffa00-ef69-11ea-92ad-bcb0a27b5e8e.gif)
 
 ### 8 Puzzle
 
@@ -56,10 +56,11 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * Iterative Depth Search
 * Best First Search
 * A* Search
+* RBFS (coming soon)
 * HillClimbing
 * Random Restart HillClimbing
 * Genetic Algorithm
-* Simulated Annealing (still working on this one)
+* Simulated Annealing (still working to improve this one)
 * Local Beam Serach
 * CSP with MRV & Degree & Forward Checking & AC-3
 
