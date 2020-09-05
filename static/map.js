@@ -89,7 +89,7 @@ function changeDegree() {
 }
 
 function changeLCV() {
-    lcv = !lcv
+    lcv = lcv
 }
 
 
