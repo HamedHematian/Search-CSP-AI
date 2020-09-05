@@ -87,7 +87,7 @@ navigate to the main folder and run <code>python3 app.py</code> in a terminal(Li
 
 #### Maps
   all svg maps have been provided from website <code>https://www.amcharts.com</code> and all rights are preserved
-  the only thing i did was preparing the adjacent list of graph
+  the only thing i did was preparing the adjacent list of graphs
   
 #### Sudoku Generation Algorithm
   the sudoku generator code has been provided from <code>www.ocf.berkeley.edu/~arel/</code>
