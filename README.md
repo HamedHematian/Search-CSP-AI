@@ -32,7 +32,8 @@
 ![NQueens](https://user-images.githubusercontent.com/70624162/92299637-5f6ffa00-ef69-11ea-92ad-bcb0a27b5e8e.gif)
 
 ### 8 Puzzle
-  
+
+![puzzle](https://user-images.githubusercontent.com/70624162/92300079-40736700-ef6d-11ea-83b5-863cdc4352ca.gif)
   
 ### Map Coloring
 
