@@ -86,7 +86,7 @@ navigate to the main folder and run <code>python3 app.py</code> in a terminal(Li
 ## Credits
 
 #### Maps
-  all svg maps have bee provided from website <code>https://www.amcharts.com</code> and all rights are preserved
+  all svg maps have been provided from website <code>https://www.amcharts.com</code> and all rights are preserved
   the only thing i did was preparing the adjacent list of graph
   
 #### Sudoku Generation Algorithm
