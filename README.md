@@ -32,7 +32,13 @@
 ![NQueens](https://user-images.githubusercontent.com/70624162/92299637-5f6ffa00-ef69-11ea-92ad-bcb0a27b5e8e.gif)
 
 ### 8 Puzzle
-
+  
+#### Maps
+  all svg maps have bee provided from website <code>https://www.amcharts.com</code> and all rights are preserved
+  the only thing i did was preparing the adjacent list of graph
+  
+#### Sudoku Generation Algorithm
+  the sudoku generator code has been provided from <code>//www.ocf.berkeley.edu/~arel/</code>
 
 ### Map Coloring
 
