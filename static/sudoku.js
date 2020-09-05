@@ -108,7 +108,7 @@ function changeDegree() {
 }
 
 function changeLCV() {
-    lcv = !lcv
+    lcv = lcv
 }
 
 function clearPuzzle() {
