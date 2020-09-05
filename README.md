@@ -89,4 +89,4 @@ navigate to the main folder and run <code>python3 app.py</code> in a terminal(Li
   the only thing i did was preparing the adjacent list of graph
   
 #### Sudoku Generation Algorithm
-  the sudoku generator code has been provided from <code>//www.ocf.berkeley.edu/~arel/</code>
+  the sudoku generator code has been provided from <code>www.ocf.berkeley.edu/~arel/</code>
