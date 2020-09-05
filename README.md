@@ -32,7 +32,15 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 
 
 ### Map Coloring
-
+* France Map
+* Australia Map
+* Russia Map
+* UK Map
+* USA Map
+* Germany Map
+* Iran Map
+* Poland Map
+* China Map
 
 
 ### Sudoku
