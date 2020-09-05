@@ -1,6 +1,6 @@
 # Search-CSP
 
-#### A Graphical Framework implementation of Search &amp; CSP section of Russel AI book
+#### A Graphical  implementation of Search &amp; CSP section of Russel AI book By Python & JS
 
 
 
