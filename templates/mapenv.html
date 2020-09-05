@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='map_style.css')}}">
+{% endblock style %}
+
+
+{% block content %}
+    <div class="settings" id="settings">
+        <div class="problem_header">Map Coloring Problem</div>
+
+            <div class="heuristic">
+                <p class="heuristic_tag">
+                    Heuristic
+                </p>
+                <div class="check_box_cotainer">
+                    <div>
+                        <input type="checkbox" name="" id="forward_checking">
+                        <label for="">
+                            <span>
+                            </span>
+                            Forward Checking
+                        </label>
+                    </div> 
+                    <div>
+                        <input type="checkbox" name="" id="arc_consistency">
+                        <label for="">
+                            <span>
+                            </span>
+                            Arc Consistency
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="mrv">
+                        <label for="">
+                            <span>
+                            </span>
+                            MRV
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="degree">
+                        <label for="">
+                            <span>
+                            </span>
+                            Degree
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="lcv">
+                        <label for="">
+                            <span>
+                            </span>
+                            LCV
+                        </label>
+                    </div>
+                </div>
+                <select name="" id="color_count_select">
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                </select>
+                <button id="solve">Solve</button>
+                <button id="end">End Algorithm</button>
+            </div>
+        </div>
+    </div>
+    <div id="map_container">
+        {% block country_map_svg %}
+        {% endblock country_map_svg %}
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='eightpuzzle_style.css')}}">
+{% endblock style %}
+
+{% block content %}
+    <div class="settings" id="settings">
+        <div class="problem_header">8 Puzzle Problem</div>
+            <p class="display_settings">Puzzle Settings</p>
+
+            <button class="puzzle_generator" id="puzzle_generator">
+                    Generate Puzzle
+            </button>
+
+            <div class="algorithm">
+                <p class="algorithm_tag">
+                    Algorithm
+                </p>
+                <select name="" id="algorithm_select">
+                    <option value="dfs">Dfs</option>
+                    <option value="bfs">Bfs</option>
+                    <option value="dls">Dls</option>
+                    <option value="ids">Ids</option>
+                    <option value="greedy">best first search</option>
+                    <option value="astar">A*</option>
+                    <option value="rbfs">Rbfs</option>
+                </select>
+                <button id="solve">Solve</button>
+                <button id="pause_resume">Pause</button>
+            </div>
+        </div>
+    </div>
+        <div id="main">
+            
+        </div>
+
+<script src="{{url_for('static', filename='eightpuzzle.js')}}"></script>
+{% endblock content %}

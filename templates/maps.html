@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='main_style.css')}}">
+{% endblock style %}
+
+
+{% block content %}
+<div id="main_div">
+    <a href="/map/france">    
+        <div>
+            France Map
+        </div>
+    </a>
+    <a href="/map/australia">    
+        <div>
+            Australiua Map
+        </div>
+    </a>
+    <a href="/map/germany">    
+        <div>
+            Germany Map
+        </div>
+    </a>
+    <a href="/map/iran">    
+        <div>
+            Iran Map
+        </div>
+    </a>
+    <a href="/map/uk">    
+        <div>
+            UK Map
+        </div>
+    </a>
+    <a href="/map/poland">    
+        <div>
+            Poland Map
+        </div>
+    </a>
+    <a href="/map/usa">    
+        <div>
+            USA Map
+        </div>
+    </a>
+    <a href="/map/china">    
+        <div>
+            China Map
+        </div>
+    </a>
+        <a href="/map/russia">    
+        <div>
+            Russia Map
+        </div>
+    </a>
+</div>
+{% endblock content %}

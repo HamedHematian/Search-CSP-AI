@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='main_style.css')}}">
+{% endblock style %}
+
+
+{% block content %}
+<div id="main_div">
+    <a href="/maps">    
+        <div>
+            Map Coloring Problem
+        </div>
+    </a>
+    <a href="/sudoku">    
+        <div>
+            Sudoku Problem
+        </div>
+    </a>
+</div>
+{% endblock content %}

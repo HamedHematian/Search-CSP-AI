@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='nqueens_style.css')}}">
+{% endblock style %}
+{% block content %}
+<div class="settings" id="settings">
+        <div class="problem_header">N&timesN Queens Problem</div>
+            <p class="display_settings">Board Settings</p>
+            <div class="n_input">
+                <p>N</p>
+                <input type="text" id="n_input">
+            </div>
+            <button class="board_generator" id="board_generator">
+                    Generate Board
+            </button>
+
+            <div class="algorithm">
+                <p class="algorithm_tag">
+                    Algorithm
+                </p>
+                <select name="" id="algorithm_select">
+                    <option value="dfs">Dfs</option>
+                    <option value="bfs">Bfs</option>
+                    <option value="ids">Ids</option>
+                    <option value="astar">A*</option>
+                    <option value="rbfs">Rbfs</option>
+                    <option value="hillclimbing">Hillclimbing</option>
+                    <option value="rrhillclimbing">Random Restart Hillclimbing</option>
+                    <option value="simulatedannealing">Simulated Anealing</option>
+                    <option value="genetic">Genetic Algorithm</option>
+                    <option value="localbeamsearch">Local Beam search</option>
+
+                </select>
+                <button id="solve">Solve</button>
+            </div>
+        </div>
+</div>
+<table class="table_container" id="table_container">
+    
+</table>
+<script src="{{url_for('static', filename='nqueens.js')}}"></script>
+{% endblock content%}

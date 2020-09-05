@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+    {% block style %}
+    {% endblock style %}
+</head>
+<body>
+    <div id="header" class="header">
+            <p id="logo">Xtreme &#946eta</p>
+            <ul>
+            <a href="/">
+                <li>
+                    Home
+                </li>
+            </a>
+            <a href="/">
+                <li>
+                    Enviroments
+                </li>
+            </a>
+            <a href="/algorithms">
+                <li>
+                    Algorithms
+                </li>
+            </a>
+            <a href="/info">
+                <li>
+                    Info
+                </li>
+            </a>
+            </ul>
+        </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

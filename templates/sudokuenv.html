@@ -1,0 +1,328 @@
+{% extends 'base.html' %}
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='sudoku_style.css')}}">
+{% endblock style %}
+
+
+{% block content %}
+    <div class="settings" id="settings">
+        <div class="problem_header">9&times9 Sudoku Problem</div>
+            <button class="puzzle_generator" id="puzzle_generator">
+                    Generate Puzzle
+            </button>
+
+            <div class="heuristic">
+                <p class="heuristic_tag">
+                    Heuristic
+                </p>
+                <div class="check_box_cotainer">
+                    <div>
+                        <input type="checkbox" name="" id="forward_checking">
+                        <label for="">
+                            <span>
+                            </span>
+                            Forward Checking
+                        </label>
+                    </div> 
+                    <div>
+                        <input type="checkbox" name="" id="arc_consistency">
+                        <label for="">
+                            <span>
+                            </span>
+                            arc Consistency
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="mrv">
+                        <label for="">
+                            <span>
+                            </span>
+                            MRV
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="degree">
+                        <label for="">
+                            <span>
+                            </span>
+                            Degree
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="lcv">
+                        <label for="">
+                            <span>
+                            </span>
+                            LCV
+                        </label>
+                    </div>
+                </div>
+                <button id="solve">Solve</button>
+                <button id="end">End Algorithm</button>
+            </div>
+    </div>
+    <table class="table_container">
+        <tr>
+            <td id="A_00">
+
+            </td>
+            <td id="A_01">
+                
+            </td>
+            <td id="A_02" class="third_column">
+                
+            </td>
+            <td id="A_03" class="fourth_column">
+                
+            </td>
+            <td id="A_04">
+                
+            </td>
+            <td id="A_05" class="third_column">
+                
+            </td>
+            <td id="A_06" class="fourth_column">
+                
+            </td>
+            <td id="A_07">
+                
+            </td>
+            <td id="A_08">
+                
+            </td>
+        </tr>
+        <tr>
+            <td id="A_10">
+
+            </td>
+            <td id="A_11">
+                
+            </td>
+            <td id="A_12" class="third_column">
+                
+            </td>
+            <td id="A_13" class="fourth_column">
+                
+            </td>
+            <td id="A_14">
+                
+            </td>
+            <td id="A_15" class="third_column">
+                
+            </td>
+            <td id="A_16" class="fourth_column">
+                
+            </td>
+            <td id="A_17">
+                
+            </td>
+            <td id="A_18">
+                
+            </td>
+        </tr>        
+        <tr class="third_row">
+            <td id="A_20">
+
+            </td>
+            <td id="A_21">
+
+            </td>
+            <td id="A_22" class="third_column">
+
+            </td>
+            <td id="A_23" class="fourth_column">
+
+            </td>
+            <td id="A_24">
+
+            </td>
+            <td id="A_25" class="third_column">
+                
+            </td>
+            <td id="A_26" class="fourth_column">
+
+            </td>
+            <td id="A_27">
+
+            </td>
+            <td id="A_28">
+                
+            </td>
+        </tr>
+        <tr class="fourth_row">
+            <td id="A_30">
+
+            </td>
+            <td id="A_31">
+
+            </td>
+            <td id="A_32" class="third_column">
+
+            </td>
+            <td id="A_33" class="fourth_column">
+
+            </td>
+            <td id="A_34">
+
+            </td>
+            <td id="A_35" class="third_column">
+                
+            </td>
+            <td id="A_36" class="fourth_column">
+
+            </td>
+            <td id="A_37">
+
+            </td>
+            <td id="A_38">
+                
+            </td>
+        </tr>
+        <tr>
+            <td id="A_40">
+
+            </td>
+            <td id="A_41">
+
+            </td>
+            <td id="A_42" class="third_column">
+
+            </td>
+            <td id="A_43" class="fourth_column">
+
+            </td>
+            <td id="A_44">
+
+            </td>
+            <td id="A_45" class="third_column">
+                
+            </td>
+            <td id="A_46" class="fourth_column">
+
+            </td>
+            <td id="A_47">
+
+            </td>
+            <td id="A_48">
+                
+            </td>
+        </tr>
+        <tr class="third_row">
+            <td id="A_50">
+
+            </td>
+            <td id="A_51">
+
+            </td>
+            <td id="A_52" class="third_column">
+
+            </td>
+            <td id="A_53" class="fourth_column">
+
+            </td>
+            <td id="A_54">
+
+            </td>
+            <td id="A_55" class="third_column">
+                
+            </td>
+            <td id="A_57" class="fourth_column">
+
+            </td>
+            <td id="A_56">
+
+            </td>
+            <td id="A_58">
+                
+            </td>            
+        </tr>
+        <tr class="fourth_row">
+            <td id="A_60">
+
+            </td>
+            <td id="A_61">
+
+            </td>
+            <td id="A_62" class="third_column">
+
+            </td>
+            <td id="A_63" class="fourth_column">
+
+            </td>
+            <td id="A_64">
+
+            </td>
+            <td id="A_65" class="third_column">
+                
+            </td>
+            <td id="A_66" class="fourth_column">
+
+            </td>
+            <td id="A_67">
+
+            </td>
+            <td id="A_68">
+                
+            </td>
+        </tr>
+        <tr>
+            <td id="A_70">
+
+            </td>
+            <td id="A_71">
+
+            </td>
+            <td id="A_72" class="third_column">
+
+            </td>
+            <td id="A_73" class="fourth_column">
+
+            </td>
+            <td id="A_74">
+
+            </td>
+            <td id="A_75" class="third_column">
+                
+            </td>
+            <td id="A_76" class="fourth_column">
+
+            </td>
+            <td id="A_77">
+
+            </td>
+            <td id="A_78">
+                
+            </td>
+        </tr>
+        <tr>
+            <td id="A_80">
+
+            </td>
+            <td id="A_81">
+
+            </td>
+            <td id="A_82" class="third_column">
+
+            </td>
+            <td id="A_83" class="fourth_column">
+
+            </td>
+            <td id="A_84">
+                
+            </td>
+            <td id="A_85" class="third_column">
+
+            </td>
+            <td id="A_86" class="fourth_column">
+
+            </td>
+            <td id="A_87">
+                
+            </td>
+            <td id="A_88">
+
+            </td>      
+        </tr>
+    </table>
+<script src="{{url_for('static', filename='sudoku.js')}}"></script>
+{% endblock content %}

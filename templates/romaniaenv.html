@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename='romania_style.css')}}">
+{% endblock style %}
+
+{% block content %}
+<div class="settings" id="settings">
+        <div class="problem_header">Romania Routing Problem</div>
+        <div class="settings_container">
+            <p class="display_settings">Routing Settings</p>
+            <p class="city_tag">
+                Source
+            </p>
+            <select name="" id="source">
+                <option value="Arad">Arad</option>
+                <option value="Bucharest">Bucharest</option>
+                <option value="Urziceni">Urziceni</option>
+                <option value="Orada">Orada</option>
+                <option value="Sibiu">Sibiu</option>
+                <option value="Neamt">Neamt</option>
+                <option value="Iasi">Iasi</option>
+                <option value="Giurgiu">Giurgiu</option>
+                <option value="Hirsova">Hirsova</option>
+                <option value="Craiova">Craiova</option>
+                <option value="Timisoara">Timisoara</option>
+                <option value="Zerind">Zerind</option>
+                <option value="Lugoj">Lugoj</option>
+                <option value="Mehadia">Mehadia</option>
+                <option value="Drobeta">Drobeta</option>
+                <option value="Pitesti">Pitesti</option>
+                <option value="Erfoie">Erfoie</option>
+                <option value="Rimnicu">Rimnicu</option>
+                <option value="Fagaras">Fagaras</option>
+                <option value="Vaslui">Vaslui</option>
+            </select>
+            <p class="city_tag">
+                Target
+            </p>
+            <select name="" id="target">
+                <option value="Bucharest">Bucharest</option>
+                <option value="Urziceni">Urziceni</option>
+                <option value="Orada">Orada</option>
+                <option value="Sibiu">Sibiu</option>
+                <option value="Neamt">Neamt</option>
+                <option value="Iasi">Iasi</option>
+                <option value="Giurgiu">Giurgiu</option>
+                <option value="Hirsova">Hirsova</option>
+                <option value="Craiova">Craiova</option>
+                <option value="Arad">Arad</option>
+                <option value="Timisoara">Timisoara</option>
+                <option value="Zerind">Zerind</option>
+                <option value="Lugoj">Lugoj</option>
+                <option value="Mehadia">Mehadia</option>
+                <option value="Drobeta">Drobeta</option>
+                <option value="Pitesti">Pitesti</option>
+                <option value="Erfoie">Erfoie</option>
+                <option value="Rimnicu">Rimnicu</option>
+                <option value="Fagaras">Fagaras</option>
+                <option value="Vaslui">Vaslui</option>
+            </select>
+                <p class="algorithm_tag">
+                    Algorithm
+                </p>
+                <select name="" id="algorithm_select">
+                    <option value="dfs">Dfs</option>
+                    <option value="bfs">Bfs</option>
+                    <option value="lds">Lds</option>
+                    <option value="ids">Ids</option>
+                    <option value="ucs">Ucs</option>
+                    <option value="greedy">Best First Search</option>
+                    <option value="astar">A*</option>
+                    <option value="rbfs">Rbfs</option>
+                </select>
+                <button id="solve">Solve</button>
+        </div>
+</div>
+<svg height="100%" width="1000px">
+    <defs>
+        <filter id="f1">
+            <feGaussianBlur stdDeviation="5" />
+        </filter>
+    </defs>
+
+    <line x1="50" y1="210" x2="60" y2="350" style="stroke:black;stroke-width:2" id="Arad_Timisoara"/>
+    <line x1="50" y1="210" x2="80" y2="130" style="stroke:black;stroke-width:2" id="Arad_Zerind"/>
+    <line x1="80" y1="130" x2="110" y2="80" style="stroke:black;stroke-width:2" id="Zerind_Orada"/>
+    <line x1="60" y1="350" x2="160" y2="430" style="stroke:black;stroke-width:2" id="Timisoara_Lugoj"/>
+    <line x1="160" y1="430" x2="165" y2="490" style="stroke:black;stroke-width:2" id="Lugoj_Mehadia"/>
+    <line x1="165" y1="490" x2="160" y2="540" style="stroke:black;stroke-width:2" id="Mehadia_Drobeta"/>
+    <line x1="160" y1="540" x2="300" y2="560" style="stroke:black;stroke-width:2" id="Drobeta_Craiova"/>
+    <line x1="50" y1="210" x2="250" y2="250" style="stroke:black;stroke-width:2" id="Arad_Sibiu"/>
+    <line x1="110" y1="80" x2="250" y2="250" style="stroke:black;stroke-width:2" id="Orada_Sibiu"/>
+    <line x1="250" y1="250" x2="290" y2="350" style="stroke:black;stroke-width:2" id="Sibiu_Rimnicu"/>
+    <line x1="300" y1="560" x2="290" y2="350" style="stroke:black;stroke-width:2" id="Craiova_Rimnicu"/>
+    <line x1="300" y1="560" x2="490" y2="400" style="stroke:black;stroke-width:2" id="Craiova_Pitesti"/>
+    <line x1="290" y1="350" x2="490" y2="400" style="stroke:black;stroke-width:2" id="Rimnicu_Pitesti"/>
+    <line x1="250" y1="250" x2="450" y2="260" style="stroke:black;stroke-width:2" id="Sibiu_Fagaras"/>
+    <line x1="450" y1="260" x2="630" y2="500" style="stroke:black;stroke-width:2" id="Fagaras_Bucharest"/>
+    <line x1="490" y1="400" x2="630" y2="500" style="stroke:black;stroke-width:2" id="Pitesti_Bucharest"/>
+    <line x1="630" y1="500" x2="600" y2="590" style="stroke:black;stroke-width:2" id="Bucharest_Giurgiu"/>
+    <line x1="630" y1="500" x2="720" y2="460" style="stroke:black;stroke-width:2" id="Bucharest_Urziceni"/>
+    <line x1="720" y1="460" x2="850" y2="460" style="stroke:black;stroke-width:2" id="Urziceni_Hirsova"/>
+    <line x1="850" y1="460" x2="890" y2="530" style="stroke:black;stroke-width:2" id="Hirsova_Erfoie"/>
+    <line x1="720" y1="460" x2="785" y2="270" style="stroke:black;stroke-width:2" id="Urziceni_Vaslui"/>
+    <line x1="785" y1="270" x2="710" y2="190" style="stroke:black;stroke-width:2" id="Vaslui_Iasi"/>
+    <line x1="710" y1="190" x2="600" y2="130" style="stroke:black;stroke-width:2" id="Iasi_Neamt"/>
+
+    <circle cx="50" cy="210" r="30" stroke="red" stroke-width="6" fill="None" class="test" id="test11"/>
+    <circle cx="50" cy="210" r="30" stroke="red" stroke-width="6" fill="None" class="test1" id="test12"/>
+    <circle cx="630" cy="500" r="30" stroke="green" stroke-width="6" fill="None" class="test" id="test21"/>
+    <circle cx="630" cy="500" r="30" stroke="green" stroke-width="6" fill="None" class="test1" id="test22"/>
+
+    <circle cx="50" cy="210" r="4" stroke="black" stroke-width="3" fill="black" id="Arad"/>
+    <circle cx="60" cy="350" r="4" stroke="black" stroke-width="3" fill="black" id="Timisoara"/>
+    <circle cx="80" cy="130" r="4" stroke="black" stroke-width="3" fill="black" id="Zerind"/>
+    <circle cx="110" cy="80" r="4" stroke="black" stroke-width="3" fill="black" id="Orada"/>
+    <circle cx="160" cy="430" r="4" stroke="black" stroke-width="3" fill="black" id="Lugoj"/>
+    <circle cx="165" cy="490" r="4" stroke="black" stroke-width="3" fill="black" id="Mehadia"/>
+    <circle cx="160" cy="540" r="4" stroke="black" stroke-width="3" fill="black" id="Drobeta"/>
+    <circle cx="300" cy="560" r="4" stroke="black" stroke-width="3" fill="black" id="Craiova"/>
+    <circle cx="250" cy="250" r="4" stroke="black" stroke-width="3" fill="black" id="Sibiu"/>
+    <circle cx="290" cy="350" r="4" stroke="black" stroke-width="3" fill="black" id="Rimnicu"/>
+    <circle cx="450" cy="260" r="4" stroke="black" stroke-width="3" fill="black" id="Fagaras"/>
+    <circle cx="490" cy="400" r="4" stroke="black" stroke-width="3" fill="black" id="Pitesti"/>
+    <circle cx="630" cy="500" r="4" stroke="black" stroke-width="3" fill="black" id="Bucharest"/>
+    <circle cx="600" cy="590" r="4" stroke="black" stroke-width="3" fill="black" id="Giurgiu"/>
+    <circle cx="720" cy="460" r="4" stroke="black" stroke-width="3" fill="black" id="Urziceni"/>
+    <circle cx="850" cy="460" r="4" stroke="black" stroke-width="3" fill="black" id="Hirsova"/>
+    <circle cx="890" cy="530" r="4" stroke="black" stroke-width="3" fill="black" id="Erfoie"/>
+    <circle cx="785" cy="270" r="4" stroke="black" stroke-width="3" fill="black" id="Vaslui"/>
+    <circle cx="710" cy="190" r="4" stroke="black" stroke-width="3" fill="black" id="Iasi"/>
+    <circle cx="600" cy="130" r="4" stroke="black" stroke-width="3" fill="black" id="Neamt"/>
+
+    
+    <text x="10" y="200" fill="black">Arad</text>
+    <text x="65" y="340" fill="black">Timisoara</text>
+    <text x="15" y="125" fill="black">Zerind</text>
+    <text x="125" y="90" fill="black">Orada</text>
+    <text x="170" y="430" fill="black">Lugoj</text>
+    <text x="85" y="495" fill="black">Mehadia</text>
+    <text x="130" y="570" fill="black">Drobeta</text>
+    <text x="285" y="590" fill="black">Craiova</text>
+    <text x="250" y="240" fill="black">Sibiu</text>
+    <text x="295" y="345" fill="black">Rimnicu</text>
+    <text x="430" y="245" fill="black">Fagaras</text>
+    <text x="470" y="385" fill="black">Pitesti</text>
+    <text x="640" y="520" fill="black">Bucharest</text>
+    <text x="580" y="620" fill="black">Giurgiu</text>
+    <text x="710" y="485" fill="black">Urziceni</text>
+    <text x="835" y="445" fill="black">Hirsova</text>
+    <text x="870" y="560" fill="black">Erfoie</text>
+    <text x="800" y="275" fill="black">Vaslui</text>
+    <text x="730" y="190" fill="black">Iasi</text>
+    <text x="615" y="130" fill="black">Neamt</text>
+
+    
+    
+</svg>
+<div width="100px" height="100px" class="div_"></div>
+<script src="{{url_for('static', filename='romania.js')}}"></script>
+{% endblock content %}
