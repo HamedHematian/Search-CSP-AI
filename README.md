@@ -42,6 +42,9 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * Poland Map
 * China Map
 
+![iran](https://user-images.githubusercontent.com/70624162/92299773-bc1fe480-ef6a-11ea-9b5c-3aed458b30e4.gif)
+![usa](https://user-images.githubusercontent.com/70624162/92299777-c17d2f00-ef6a-11ea-8cf4-9068167a281b.gif)
+![russia](https://user-images.githubusercontent.com/70624162/92299782-c6da7980-ef6a-11ea-8fde-4bd89b3315f1.gif)
 
 ### Sudoku
 
