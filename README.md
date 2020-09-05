@@ -1,5 +1,6 @@
 # Search-CSP
-A Graphical Framework implementation of Search &amp; CSP section of Russel AI book
+
+#### A Graphical Framework implementation of Search &amp; CSP section of Russel AI book
 
 
 
@@ -23,15 +24,18 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 * [Sudoku](#Sudoku)
 
 ### Romania Map
+
 ![Romania](https://user-images.githubusercontent.com/70624162/92299596-d658c300-ef68-11ea-86e3-31e40de44200.gif)
 
 ### N Queens
+
 ![NQueens](https://user-images.githubusercontent.com/70624162/92299637-5f6ffa00-ef69-11ea-92ad-bcb0a27b5e8e.gif)
 
 ### 8 Puzzle
 
 
 ### Map Coloring
+
 * France Map
 * Australia Map
 * Russia Map
@@ -52,6 +56,7 @@ A Graphical Framework implementation of Search &amp; CSP section of Russel AI bo
 
 ### Sudoku
 
+![Sudoku](https://user-images.githubusercontent.com/70624162/92299840-4e27ed00-ef6b-11ea-8ff5-818bf11c780a.gif)
 
 
 
