@@ -1,0 +1,23 @@
+#main_div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh
+}
+
+#main_div div {
+    background-color: rgb(30, 30, 75);
+    color: #eee;
+    width: 70vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 2vw;
+    line-height: 12vw;
+}
+
+#main_div a {
+    text-decoration: none;
+}

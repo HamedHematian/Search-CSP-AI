@@ -1,0 +1,113 @@
+.table_container {
+    width: 450px;
+    height: 450px;
+    border: 3px solid black;
+    padding: 0px;
+    table-layout: fixed;
+    margin-top: 50px;
+    margin-left: 250px;
+    border-collapse: collapse;
+}
+
+table td {
+    border:1px solid black;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+}
+
+.third_row td {
+    border-bottom: 3px solid black
+}
+
+.third_column {
+    border-right: 3px solid black 
+}
+
+.fourth_row td {
+    border-top: 3px solid black 
+}
+
+.fourth_column {
+   border-left: 3px solid black 
+}
+
+.settings {
+    width: 20vw;
+    height: 100vh;
+    float: right;
+    background-color: #eee;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.problem_header {
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    line-height: 60px;
+}
+
+
+.puzzle_generator {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: dodgerblue;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.heuristic {
+    padding-top: 5vh;
+    border-top: 3px solid black
+}
+.heuristic_tag {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5vh;
+}
+
+.heuristic button {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: dodgerblue;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 5vh;
+}
+
+.display_settings {
+    text-align: center;
+    font-size: 20px;
+    border-top: 3px solid black;
+    padding-top: 5vh;
+}
+
+.check_box_cotainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.check_box_cotainer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.check_box_cotainer div input {
+    margin-right: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+}

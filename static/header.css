@@ -1,0 +1,61 @@
+html, body {
+    padding:0;
+    margin: 0;
+    background-color: #eee;
+}
+
+.header {
+    height: 16vh;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: 0;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.header ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.header ul li {
+    text-decoration: none;
+    display: inline;
+    font-size: 30px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.header #logo {
+    color: rgb(33, 72, 73);
+    margin:0;
+    margin-left: 20px;
+    padding: 0;
+    display: inline;
+    border-right-color: rgb(54, 36, 14);
+    border-right: 2px;
+    cursor: pointer;
+}
+
+.header #back {
+    margin:0;
+    margin-left: 20px;
+    padding: 0;
+    display: inline;
+    float: right;
+}
