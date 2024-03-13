@@ -1,6 +1,6 @@
 # Search-CSP
 
-#### A Graphical  implementation of Search &amp; CSP section of Russel AI book By Python & JS
+#### A Graphical  implementation of Search &amp; CSP section of Russell AI book By Python & Java Script
 
 
 
@@ -24,18 +24,22 @@
 * [Sudoku](#Sudoku)
 
 ### Romania Map
+Finding the routes between two cities on Romania map based on a specific algorithm.
 
 ![Romania](https://user-images.githubusercontent.com/70624162/92299596-d658c300-ef68-11ea-86e3-31e40de44200.gif)
 
 ### N Queens
+This problem deals with putting N queens on a chess board such that there is no pair queens that threat each other.
 
 ![NQueens](https://user-images.githubusercontent.com/70624162/92299637-5f6ffa00-ef69-11ea-92ad-bcb0a27b5e8e.gif)
 
 ### 8 Puzzle
+Ordering 8 numbers in a 9 tile board.
 
 ![puzzle](https://user-images.githubusercontent.com/70624162/92300079-40736700-ef6d-11ea-83b5-863cdc4352ca.gif)
   
 ### Map Coloring
+This problem deals with coloring a map on a 2D plane with 4 colors, such that no adjacent states have the same color.
 
 * France Map
 * Australia Map
@@ -56,6 +60,7 @@
 ![russia](https://user-images.githubusercontent.com/70624162/92299782-c6da7980-ef6a-11ea-8fde-4bd89b3315f1.gif)
 
 ### Sudoku
+Just sudoku.
 
 ![Sudoku](https://user-images.githubusercontent.com/70624162/92299840-4e27ed00-ef6b-11ea-8ff5-818bf11c780a.gif)
 
